@@ -1,57 +1,79 @@
 <html>
+
     <head>
-    
+        
         <title>Javascript</title>
+        
+        <style type="text/css">
+        
+            .circle {
+                
+                width:130px;
+                height:130px;
+                border-radius: 50%;
+                float:left;
+                margin-right:50px;
+                
+            }
+            
+            #red-circle {
+                
+                background-color: red;
+                
+            }
+            
+            #blue-circle {
+                
+                background-color: blue;
+                
+            }
+            
+            #yellow-circle {
+                
+                background-color: yellow;
+                
+            }
+        
+        </style>
     
     </head>
-    
+
     <body>
-    
-        <p id="text">Hello World!</p>
         
-        <button id="myButton">Change text</button>
+        <div class="circle" id="red-circle"></div>
         
-        <p id="secondParagraph">Javascript is ...</p>
+        <div class="circle" id="blue-circle"></div>
         
-        <button id="secondButton">Append text</button>
+        <div class="circle" id="yellow-circle"></div>
         
-        <p id="emptyParagraph"></p>
-        
-        <button id="createButton">Create text</button>
-        
-        <p id="moreText">This is some text</p>
-        
-        <button id="styleText">Style Text</button>
         
         <script type="text/javascript">
             
-            document.getElementById("myButton").onclick=function() {
-                
-                document.getElementById("text").innerHTML="Hello XXXXX";
-                
-            }
-            
-            document.getElementById("secondButton").onclick=function() {
-                
-                document.getElementById("secondParagraph").innerHTML+="fun!!!!!!";
+            document.getElementById("red-circle").onclick = function() {
+                              
+                document.getElementById("red-circle").style.display = "none";
                 
             }
             
-            document.getElementById("createButton").onclick=function() {
-                
-                document.getElementById("emptyParagraph").innerHTML+="<h1>tessssssst</h1>";
+            document.getElementById("yellow-circle").onclick = function() {
+                              
+                document.getElementById("yellow-circle").style.display = "none";
                 
             }
             
-            document.getElementById("styleText").onclick=function() {
-                
-                document.getElementById("moreText").style.color="red";
-                document.getElementById("moreText").style.fontSize="50px";
+            document.getElementById("blue-circle").onclick = function() {
+                              
+                document.getElementById("blue-circle").style.display = "none";
                 
             }
+            
+            
+            
+            
+            
             
         </script>
-    
+        
     </body>
-    
+
 </html>
