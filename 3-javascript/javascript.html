@@ -19,6 +19,10 @@
         
         <button id="createButton">Create text</button>
         
+        <p id="moreText">This is some text</p>
+        
+        <button id="styleText">Style Text</button>
+        
         <script type="text/javascript">
             
             document.getElementById("myButton").onclick=function() {
@@ -35,7 +39,14 @@
             
             document.getElementById("createButton").onclick=function() {
                 
-                document.getElementById("emptyParagraph").innerHTML+="tessssssst";
+                document.getElementById("emptyParagraph").innerHTML+="<h1>tessssssst</h1>";
+                
+            }
+            
+            document.getElementById("styleText").onclick=function() {
+                
+                document.getElementById("moreText").style.color="red";
+                document.getElementById("moreText").style.fontSize="50px";
                 
             }
             
