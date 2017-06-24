@@ -11,11 +11,31 @@
         
         <button id="myButton">Change text</button>
         
+        <p id="secondParagraph">Javascript is ...</p>
+        
+        <button id="secondButton">Append text</button>
+        
+        <p id="emptyParagraph"></p>
+        
+        <button id="createButton">Create text</button>
+        
         <script type="text/javascript">
             
             document.getElementById("myButton").onclick=function() {
                 
                 document.getElementById("text").innerHTML="Hello XXXXX";
+                
+            }
+            
+            document.getElementById("secondButton").onclick=function() {
+                
+                document.getElementById("secondParagraph").innerHTML+="fun!!!!!!";
+                
+            }
+            
+            document.getElementById("createButton").onclick=function() {
+                
+                document.getElementById("emptyParagraph").innerHTML+="tessssssst";
                 
             }
             
