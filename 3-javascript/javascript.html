@@ -38,40 +38,24 @@
     
     </head>
 
-    <body>
+    <body>        
+    
+        <input type="text" id="textInput">
         
-        <div class="circle" id="red-circle"></div>
+        <button id="textChanger">Change the text!</button>
         
-        <div class="circle" id="blue-circle"></div>
-        
-        <div class="circle" id="yellow-circle"></div>
-        
+        <p id="text">This is some text</p>
         
         <script type="text/javascript">
+        
+            document.getElementById("textChanger").onclick=function(){
             
-            document.getElementById("red-circle").onclick = function() {
-                              
-                document.getElementById("red-circle").style.display = "none";
-                
+                var textEntered = "";
+                textEntered = document.getElementById("textInput").value;
+                document.getElementById("text").innerHTML=textEntered;
+            
             }
-            
-            document.getElementById("yellow-circle").onclick = function() {
-                              
-                document.getElementById("yellow-circle").style.display = "none";
-                
-            }
-            
-            document.getElementById("blue-circle").onclick = function() {
-                              
-                document.getElementById("blue-circle").style.display = "none";
-                
-            }
-            
-            
-            
-            
-            
-            
+        
         </script>
         
     </body>
