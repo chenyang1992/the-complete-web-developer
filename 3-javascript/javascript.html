@@ -47,9 +47,7 @@
                 
                     var guess = Math.random();
 
-                    guess = guess * 6;
-
-                    guess = Math.floor(guess);
+                    guess = Math.floor(guess * 6);
 
                     if (guess == myNumber) {
                         
@@ -57,11 +55,7 @@
 
                         alert ("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses.");
 
-                    } else {
-
-                        numberOfGuesses++;
-
-                    }
+                    } else numberOfGuesses++;
                 
                 }
                 
